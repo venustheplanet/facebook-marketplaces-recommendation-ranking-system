@@ -14,7 +14,8 @@ def clean_image_data(filepath):
         print(im.format, im.size, im.mode)
         final_size = 512
         new_im = resize_image(final_size, im)
-        new_im.save(f'{new_dir}/{n}_resized.jpg')
+        new_im.save(f'{new_dir}/{image}')
+        # new_im.save(f'{new_dir}/{n}_resized.jpg')
 
 
 def resize_image(final_size, im):
@@ -34,5 +35,5 @@ if __name__ == '__main__':
     # for image in dirs:
     #     im = Image.open(f"/Users/venus/Downloads/cleaned_images/{image}")
     #     print(im.format, im.size, im.mode)
-
+    
 
